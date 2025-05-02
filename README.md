@@ -1,14 +1,33 @@
-# WizzairBestTrip
-program has the following functionality: 
-It retrieves existing fares from a travel website, selects the lowest prices among the given fares, as if looking for the best deals. It calculates the best interval for the return trip based on how long you want to stay at the destination. The program works on any request related to the travel site.
+# ✈️ Wizzair Best Trip Planner
 
-The second functionality is choosing fares based on the desired price.
+**Wizzair Best Trip Planner** is a Python-based tool that automates the search for the best airfare deals on the Wizzair website. Built using `pandas` and `BeautifulSoup`, it scrapes fare data, filters the cheapest options, and exports your best trips to Excel — all based on user-defined preferences.
 
-The working principle of the program is as follows:
-The program takes the following parameters to generate the best fares:
-FROM = 'KUT' -- Departure location
-TO = 'AUH' -- Destination location
-INTERVAL = 7 -- Interval (the time between the departure date and the return date)
-USER_PRICE = 123 -- Desired price for the fare
+---
 
-The result will be exported to an Excel file 
+## 📌 Features
+
+- 🔎 Scrapes live fare data from the Wizzair website  
+- 💰 Selects the **lowest fares** for specified routes  
+- 🧮 Calculates best **return trip intervals** based on user input  
+- 🎯 Filters results based on a **target price**  
+- 📤 Exports selected fare data to an **Excel file**
+
+---
+
+## ⚙️ How It Works
+
+The program takes the following input parameters:
+
+```python
+FROM = 'KUT'       # Departure location (IATA code)
+TO = 'AUH'         # Destination location (IATA code)
+INTERVAL = 7       # Days between departure and return
+USER_PRICE = 123   # Desired maximum fare price
+
+
+## 📦 Requirements
+- Python 3.8+
+- pandas
+- beautifulsoup4
+- requests
+- openpyxl (for Excel export)
