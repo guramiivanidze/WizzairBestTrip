@@ -24,6 +24,7 @@ TO = 'AUH'         # Destination location (IATA code)
 INTERVAL = 7       # Days between departure and return
 USER_PRICE = 123   # Desired maximum fare price
 
+```
 
 ## 📦 Requirements
 - Python 3.8+
